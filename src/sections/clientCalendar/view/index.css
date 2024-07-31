@@ -1,0 +1,67 @@
+/* CalendarViewDropdown.css */
+.styled-menu {
+  width: 300px;
+  padding: 10px;
+}
+
+.styled-tabs {
+  /* border-bottom: 1px solid #ddd; */
+  margin-bottom: 5px;
+}
+
+.search-field {
+  margin-bottom: 10px;
+}
+.list-item {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.loading-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  padding: 10px 10px;
+}
+
+.eventTitle {
+  margin-bottom: 16px;
+}
+
+.eventDetail {
+  margin-bottom: 8px;
+}
+
+.event-content {
+  align-items: center;
+  background: gray;
+  padding: 5px;
+}
+
+.event-time {
+  color: white;
+  font-size: 12px;
+}
+
+.event-title {
+  margin-top: 2px;
+}
+
+.event-end-time {
+  margin-top: 2px;
+}
+
+.fc-daygrid-event {
+  white-space: normal !important;
+}

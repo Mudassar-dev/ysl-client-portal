@@ -1,0 +1,48 @@
+.info-reports .card-box {
+  border: 1px solid #d7d7d7;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 1rem;
+}
+.info-reports .card-box p {
+  margin-bottom: 0.3rem;
+}
+.info-reports .card-box a {
+  text-decoration: none;
+}
+.info-reports .card-title {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+.info-reports .card-dashed {
+  border: 1px dashed #d7d7d7;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+.info-reports .list-items {
+  border-bottom: 1px solid #d7d7d7;
+  padding: 5px 0;
+}
+.info-reports .list-items:last-child {
+  border: none;
+}
+
+.info-reports.user-profile .media {
+  margin-bottom: 1rem;
+  display: flex;
+}
+.info-reports.user-profile .media img {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+.info-reports.user-profile .media-body h5 {
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+.info-reports.user-profile h4 {
+  margin: 1rem 0;
+}

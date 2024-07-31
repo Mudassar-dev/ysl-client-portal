@@ -1,0 +1,31 @@
+.login-section {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 100vh !important;
+  text-align: center !important;
+}
+
+.login-section .logo {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 25px;
+}
+
+.login-section .text {
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+
+.login-section .button {
+  background: linear-gradient(45deg, #fdef3d, #c25e00);
+  border: 0;
+  border-radius: 3px;
+  color: white;
+  height: 48px;
+  padding: 0 60px;
+  margin-top: 32px;
+  text-transform: none;
+  border-radius: 10px;
+}

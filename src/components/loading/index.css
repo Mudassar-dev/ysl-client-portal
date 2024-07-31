@@ -1,0 +1,9 @@
+.dynamic-loader {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}

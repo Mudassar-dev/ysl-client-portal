@@ -1,0 +1,58 @@
+.info-reports .card-box {
+  border: 1px solid #d7d7d7;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 1rem;
+}
+.info-reports .card-box p {
+  margin-bottom: 0.3rem;
+}
+.info-reports .card-box a {
+  text-decoration: none;
+}
+.info-reports .card-title {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+.info-reports .card-dashed {
+  border: 1px dashed #d7d7d7;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+.info-reports .list-items {
+  border-bottom: 1px solid #d7d7d7;
+  padding: 5px 0;
+}
+.info-reports .list-items:last-child {
+  border: none;
+}
+.active-bage {
+  background-color: #b5f6b5a6;
+  color: #0da104;
+  padding: 5px 21px;
+  border-radius: 10px;
+  display: inline-block;
+}
+.according-listing .accordion-body {
+  padding: 1rem;
+  background-color: #f6f6f6;
+}
+.according-listing [data-bs-toggle] {
+  border-bottom: 1px solid #d7d7d7;
+  margin: 0;
+  padding: 1rem 0;
+}
+.according-listing .accordion-body h3 {
+  margin: 0.8rem 0;
+}
+
+.according-listing .accordion-body table tr td:last-child,
+.according-listing .accordion-body table tr th:last-child {
+  text-align: end;
+}
+.according-listing .accordion-body table {
+  border-top: 1px solid #d7d7d7;
+  margin-top: 1rem;
+}
