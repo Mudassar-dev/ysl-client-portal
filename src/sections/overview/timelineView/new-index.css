@@ -20,7 +20,7 @@
   display: flex !important;
   min-height: 280px;
   position: relative;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 .roadmapWrap .roadmapWrap_content {
   background-color: #737373;
@@ -89,6 +89,16 @@
 }
 .roadmap_Slider .slick-next:before,
 .roadmap_Slider .slick-prev:before {
-  color: #000;
-  font-size: 26px;
+  color: #ffffff;
+  font-size: 23px;
+  opacity: 1;
+}
+
+.roadmap_Slider .slick-next,
+.roadmap_Slider .slick-prev {
+  background-color: #161515;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    color: white;
 }

@@ -52,6 +52,7 @@ export default function Roadmap() {
     speed: 500,
     slidesToShow: 3,
     margin: 20,
+    nav:false,
     slidesToScroll: 1,
     // centerMode: true,
   };
