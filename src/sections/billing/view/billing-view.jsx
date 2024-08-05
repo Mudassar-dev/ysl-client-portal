@@ -23,7 +23,7 @@ export default function BillingView() {
   const getBillingDetails = async () => {
     setIsLoading(true);
     try {
-      const resData = await getCleintBillingDetails('King Plumbing');
+      const resData = await getCleintBillingDetails('AirCo Air Conditioning, Heating and Plumbing');
       setBillingData(resData?.data);
       setIsLoading(false);
     } catch (error) {
@@ -51,7 +51,7 @@ export default function BillingView() {
           <InfoCard billingData={billingData} />
           {/* <CustomerConfigurations /> */}
           <Subscriptions billingData={billingData} />
-          <InviceSection />
+          <InviceSection billingData={billingData} />
         </section>
       )}
       {/* <InviceSection /> */}

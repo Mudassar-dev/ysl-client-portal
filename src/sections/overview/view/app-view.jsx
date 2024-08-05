@@ -15,7 +15,7 @@ import AppWidgetSummary from '../app-widget-summary';
 import AppTrafficBySite from '../app-traffic-by-site';
 import AppCurrentSubject from '../app-current-subject';
 import AppConversionRates from '../app-conversion-rates';
-import HorizontalTimeline from '../timelineView/app-timeline';
+import HorizontalTimeline from '../timelineView/new-timeline';
 import CalendarComponent from '../calanderView/calendar-view';
 
 // ----------------------------------------------------------------------
