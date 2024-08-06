@@ -7,11 +7,13 @@ import Typography from '@mui/material/Typography';
 import { getCleintBillingDetails } from 'src/services/userService';
 
 import Loading from 'src/components/loading';
+import BillingTimeline from 'src/components/timeline-view/billing-timeline';
 
 import './index.css';
 import InfoCard from '../info-card';
 import InviceSection from '../invoice-section';
 import Subscriptions from '../Subscriptions-card';
+
 // import CustomerConfigurations from '../customerConfigurations-card';
 
 // ----------------------------------------------------------------------
@@ -44,6 +46,9 @@ export default function BillingView() {
           New Post
         </Button> */}
       </Stack>
+
+      <BillingTimeline timelineData={billingData?.invoiceTimeline} />
+
       {isLoading ? (
         <Loading />
       ) : (
