@@ -17,11 +17,11 @@
   z-index: 0;
 }
 .roadmapWrap {
-  align-items: flex-end;
+  /* align-items: flex-end; */
   display: flex !important;
-  min-height: 170px;
+  /* min-height: 170px; */
   position: relative;
-  /* margin-top: 60px; */
+  padding-top: 60px;
 }
 .roadmapWrap .roadmapWrap_content {
   border-radius: 10px;
@@ -33,7 +33,7 @@
   padding: 10px 20px;
   width: 100%;
   margin: 0 20px;
-  min-height: 92px !important;
+  /* min-height: 92px !important; */
   z-index: 1;
 }
 
@@ -54,8 +54,8 @@
 .roadmapWrap:before {
   background-color: gray;
   content: '';
-  height: 70px;
-  top: 8px;
+  height: 60px;
+  top: 0px;
   width: 2px;
   z-index: 0;
 }
