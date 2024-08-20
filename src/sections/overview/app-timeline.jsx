@@ -1,22 +1,15 @@
-// import Slider from 'react-slick';
 import React, { useRef, useState, useEffect } from 'react';
 
-// import Box from '@mui/material/Box';
-// import List from '@mui/material/List';
-// import ListItem from '@mui/material/ListItem';
 import Container from '@mui/material/Container';
-// import Typography from '@mui/material/Typography';
-// import ListItemText from '@mui/material/ListItemText';
 
 import { getClientJourny } from 'src/services/userService';
 
 import Timeline from 'src/components/timeline-view/timeline';
-
-// import Loading from 'src/components/loading/loading';
+import TimelineSkeleton from 'src/components/loading-placeholder/timeline';
 
 export default function Roadmap() {
   const sliderRef = useRef(null);
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const [journyStages, setjournyStages] = useState([]);
   const [journyValue, setjournyValue] = useState('');
 
@@ -61,7 +54,7 @@ export default function Roadmap() {
       <Container maxWidth="lg" className="container-lg">
         {/* <Typography variant="h1">Slider</Typography> */}
         {isLoading ? (
-          <div> </div>
+          <TimelineSkeleton sliderSettings={settings} />
         ) : (
           <Timeline
             sliderSettings={settings}

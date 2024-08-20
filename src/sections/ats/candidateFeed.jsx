@@ -25,7 +25,7 @@ export default function CandidateFeed({ candidateFeedData, tabValue, handleTabCh
   const navigate = useNavigate();
 
   const handleViewProfile = (candidateId) => {
-    navigate(`/ats/candidateprofile?id=${candidateId}`);
+    navigate(`/ats/candidateprofile/${candidateId}`);
   };
 
   useEffect(() => {

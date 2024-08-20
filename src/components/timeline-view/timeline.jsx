@@ -25,7 +25,6 @@ export default function Timeline({ sliderSettings, activeSlider, timelineData })
   return (
     <section className="">
       <Container maxWidth="lg" className="container-lg">
-        {/* <Typography variant="h1">Slider</Typography> */}
         <Box className="wrapper">
           <Box className="roadmap_Slider">
             <Slider ref={sliderRef} {...sliderSettings}>
@@ -39,9 +38,6 @@ export default function Timeline({ sliderSettings, activeSlider, timelineData })
                       <ListItem>
                         <ListItemText primary={stage?.label} />
                       </ListItem>
-                      {/* <ListItem>
-                        <ListItemText primary="Website + Social Media Launch" />
-                      </ListItem> */}
                     </List>
                   </Box>
                 </Box>

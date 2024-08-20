@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
-import Chip from '@mui/material/Chip';
 import Typography from '@mui/material/Typography';
 import CardContent from '@mui/material/CardContent';
 
@@ -25,10 +24,7 @@ export default function Subscriptions({ billingData }) {
                 <Typography>Status</Typography>
               </Box>
               <Box flex="3">
-                <Chip
-                  label={data?.status}
-                  color={data?.status === 'active' ? 'success' : 'error'}
-                />
+                <Typography className="active-bage">{data?.status}</Typography>
               </Box>
             </Box>
 

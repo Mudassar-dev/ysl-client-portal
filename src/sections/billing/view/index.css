@@ -53,10 +53,13 @@
   padding: 1rem;
   background-color: #f6f6f6;
 }
+
+.according-listing .according-heading {
+  padding: 15px 40px;
+}
 .according-listing [data-bs-toggle] {
-  border-bottom: 1px solid #d7d7d7;
   margin: 0;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
 .according-listing .accordion-body h3 {
   margin: 0.8rem 0;

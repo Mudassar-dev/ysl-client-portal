@@ -52,11 +52,9 @@ export default function BillingView() {
       ) : (
         <section className="info-reports">
           <BillingTimeline timelineData={billingData?.invoiceTimeline} />
-
           <InfoCard billingData={billingData} />
-          {/* <CustomerConfigurations /> */}
           <Subscriptions billingData={billingData} />
-          <InviceSection billingData={billingData} />
+          {billingData?.invoice?.length && <InviceSection invoiceData={billingData?.invoice} />}
         </section>
       )}
       {/* <InviceSection /> */}

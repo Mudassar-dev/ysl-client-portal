@@ -6,14 +6,12 @@ import DashboardLayout from 'src/layouts/dashboard';
 export const IndexPage = lazy(() => import('src/pages/app'));
 export const AssetsPage = lazy(() => import('src/pages/assetes'));
 export const DocumentViewer = lazy(() => import('src/sections/assets/document-view'));
-
 export const CandidateProfilePage = lazy(() => import('src/pages/candidateProfile'));
-
 export const ClientCalendarPage = lazy(() => import('src/pages/clientcalendar'));
-
 export const AtsPage = lazy(() => import('src/pages/ats'));
 export const LoginPage = lazy(() => import('src/pages/login'));
 export const BillingPage = lazy(() => import('src/pages/billing'));
+export const AdminView = lazy(() => import('src/pages/user'));
 export const Page404 = lazy(() => import('src/pages/page-not-found'));
 
 // ----------------------------------------------------------------------
@@ -42,6 +40,10 @@ export default function Router() {
     {
       path: 'login',
       element: <LoginPage />,
+    },
+    {
+      path: 'admin',
+      element: <AdminView />,
     },
     {
       path: '404',
