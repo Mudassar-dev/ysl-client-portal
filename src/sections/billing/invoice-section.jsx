@@ -154,8 +154,9 @@ function InvoiceAccordion({ billingData }) {
           <Accordion className="accordion" id={index}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
+              aria-controls="panel1a-content "
               id="panel1a-header"
+            
             >
               <Grid
                 container
@@ -187,7 +188,9 @@ function InvoiceAccordion({ billingData }) {
               aria-labelledby="headingOne"
               data-bs-parent="#accordionExample"
             >
+              
               <Typography>
+                <Box className="card-dashed">
                 <Typography className="active-bage">
                   {invoice?.status} <small>on {formattedDate(invoice?.paid_at)}</small>
                 </Typography>
@@ -218,7 +221,7 @@ function InvoiceAccordion({ billingData }) {
                   <strong>Due Date :</strong> {formattedDate(invoice?.due_date)}{' '}
                   {invoice?.site_details_at_creation?.timezone}
                 </Typography>
-
+                </Box>
                 <TableContainer component={Paper} className="table">
                   <Table>
                     <TableHead>

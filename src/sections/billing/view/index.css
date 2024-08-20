@@ -15,11 +15,25 @@
   margin-bottom: 1rem;
   font-size: 1.3rem;
 }
-.info-reports .card-dashed {
+.info-reports .card-dashed{
   border: 1px dashed #d7d7d7;
   border-radius: 0.5rem;
   margin-top: 1rem;
   padding: 1rem;
+}
+.accordion-collapse .card-dashed{
+  margin-bottom: 1rem;
+}
+.accordion-collapse .card-dashed h3{
+  font-size: 20px;
+  margin: 0.5rem 0;
+}
+.accordion-collapse .card-dashed p{
+  margin: 0.5rem 0;
+}
+.accordion-collapse .card-dashed strong{
+  
+ margin-right: 0.3rem;
 }
 .info-reports .list-items {
   border-bottom: 1px solid #d7d7d7;
@@ -55,4 +69,16 @@
 .according-listing .accordion-body table {
   border-top: 1px solid #d7d7d7;
   margin-top: 1rem;
+}
+.according-listing{
+  background-color: white;
+}
+.according-listing .MuiGrid-root.css-mhc70k-MuiGrid-root.mx-0{
+  padding: 0 16px;
+}
+.css-eqpfi5-MuiAccordionSummary-content.Mui-expanded{
+  margin:0;
+}
+.mt-3{
+  margin-top: 0.3rem;
 }

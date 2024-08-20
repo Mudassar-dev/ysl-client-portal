@@ -29,6 +29,7 @@ export default function InvoiceDetail({
     <Collapse in={isExpanded} timeout="auto" unmountOnExit>
       <Box id={id} className="accordion-collapse collapse show">
         <CardContent>
+
           <Typography>
             <span className="active-badge">
               Paid <small>{invoiceDetails?.date}</small>
@@ -59,6 +60,7 @@ export default function InvoiceDetail({
           <Typography>
             <b>Payment Terms Due:</b> {invoiceDetails?.paymentTermsDue}
           </Typography>
+       
           <Box component="table" className="table">
             <thead>
               <tr>
@@ -75,18 +77,18 @@ export default function InvoiceDetail({
               ))}
             </tbody>
           </Box>
-          <Grid container>
-            <Grid item xs={6} />
-            <Grid item xs={3}>
+          <Grid container className="mt-3">
+            <Grid item xs={6} sm={3} />
+            <Grid item xs={3} sm={6}>
               <Typography>Total</Typography>
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={3} sm={6}>
               <Typography>{invoiceDetails?.totalAmount}</Typography>
             </Grid>
           </Grid>
           <Grid container className="mt-3">
-            <Grid item xs={6} />
-            <Grid item xs={3}>
+            <Grid item xs={6} sm={3} />
+            <Grid item xs={3} sm={6}>
               <Typography>Amount Paid</Typography>
             </Grid>
             <Grid item xs={3}>
