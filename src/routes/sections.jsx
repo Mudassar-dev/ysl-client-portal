@@ -29,7 +29,7 @@ export default function Router() {
       children: [
         { element: <IndexPage />, index: true },
         { path: 'ats', element: <AtsPage /> },
-        { path: 'ats/candidateprofile', element: <CandidateProfilePage /> },
+        { path: 'ats/candidateprofile/:id', element: <CandidateProfilePage /> },
 
         { path: 'billing', element: <BillingPage /> },
 
