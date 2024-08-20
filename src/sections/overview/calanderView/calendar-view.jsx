@@ -16,7 +16,7 @@ export default function CalendarView() {
   const getUsercalenderEvents = async () => {
     try {
       setIsLoading(true);
-      const calenderEvents = await fetchCalanderEvents({ email: 'mudassar@yellowstonelocal.com' });
+      const calenderEvents = await fetchCalanderEvents({ email: 'mudassariqbal.dev@gmail.com' });
       const evenetData = calenderEvents?.data;
 
       const { email, calendarEvents } = evenetData;

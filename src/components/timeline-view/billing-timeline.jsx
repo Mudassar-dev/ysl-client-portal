@@ -44,11 +44,14 @@ export default function Billing_Timeline({ timelineData }) {
           <Box className="payment_Slider roadmap_Slider">
             <Slider {...settings}>
               {timelineData?.map((data, index) => (
-                <Box className="roadmapWrap">
-                  <Typography component="span" className="phase">
-                    <CheckIcon />
+                <Box className={`roadmapWrap ${data?.status === 'paid' ? 'active' : ''}`}>
+                  <Typography
+                    component="span"
+                    className={`phase ${data?.status === 'paid' ? 'active' : ''}`}
+                  >
+                    {data?.status === 'paid' ? <CheckIcon /> : <> </>}
                   </Typography>
-                  <Box className="roadmapWrap_content">
+                  <Box className={`roadmapWrap_content ${data?.status === 'paid' ? 'active' : ''}`}>
                     <List>
                       <ListItem>
                         <ListItemText
@@ -87,49 +90,6 @@ export default function Billing_Timeline({ timelineData }) {
                   </Box>
                 </Box>
               ))}
-
-              <Box className="roadmapWrap">
-                <Typography component="span" className="phase">
-                  <CheckIcon />
-                </Typography>
-                <Box className="roadmapWrap_content">
-                  <List>
-                    <ListItem>
-                      <Typography component="strong">
-                        <strong>Amount: </strong>
-                      </Typography>
-                      <Typography component="span"> 12.023$</Typography>
-                    </ListItem>
-
-                    <ListItem>
-                      <Typography component="strong">
-                        <strong>Due Date: </strong>
-                      </Typography>
-                      <Typography component="span"> 7 July 2024</Typography>
-                      {/* <ListItemText primary={<strong>Due Date: </strong>} secondary="7 July 2024" /> */}
-                    </ListItem>
-                  </List>
-                  {/* <Typography component="p">
-                    lorem plsaum dolow waht you can say how we handel is payemwnt way
-                  </Typography> */}
-                </Box>
-              </Box>
-
-              <Box className="roadmapWrap">
-                <Typography variant="subtitle1" className="phase">
-                  Phase
-                </Typography>
-                <Box className="roadmapWrap_content">
-                  <List>
-                    {/* <ListItem>
-                      <ListItemText primary={stage?.label} />
-                    </ListItem> */}
-                    <ListItem>
-                      <ListItemText primary="Website + Social Media Launch" />
-                    </ListItem>
-                  </List>
-                </Box>
-              </Box>
             </Slider>
           </Box>
         </Box>

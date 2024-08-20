@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { useNavigate } from 'react-router-dom';
 
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
@@ -11,10 +12,16 @@ import CardActionArea from '@mui/material/CardActionArea';
 // ----------------------------------------------------------------------
 
 export default function PostCard({ file }) {
-  const { name, thumbnailLink, webViewLink } = file;
+  const navigate = useNavigate();
+  const { name, thumbnailLink, id } = file;
+
+  const handleClick = (fileId) => {
+    navigate(`/assets/document-viewer/${fileId}`);
+  };
+
   return (
     <Grid item xs={12} sm={6} md={3}>
-      <CardActionArea component="a" href={webViewLink} target="_blank" rel="noopener noreferrer">
+      <CardActionArea onClick={() => handleClick(id)}>
         <Card>
           <Box position="relative" pt="calc(100% * 3 / 4)">
             <Box

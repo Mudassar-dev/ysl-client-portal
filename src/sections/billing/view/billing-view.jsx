@@ -47,12 +47,12 @@ export default function BillingView() {
         </Button> */}
       </Stack>
 
-      <BillingTimeline timelineData={billingData?.invoiceTimeline} />
-
       {isLoading ? (
         <Loading />
       ) : (
         <section className="info-reports">
+          <BillingTimeline timelineData={billingData?.invoiceTimeline} />
+
           <InfoCard billingData={billingData} />
           {/* <CustomerConfigurations /> */}
           <Subscriptions billingData={billingData} />
