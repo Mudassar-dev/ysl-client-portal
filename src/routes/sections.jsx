@@ -5,6 +5,8 @@ import DashboardLayout from 'src/layouts/dashboard';
 
 export const IndexPage = lazy(() => import('src/pages/app'));
 export const AssetsPage = lazy(() => import('src/pages/assetes'));
+export const DocumentViewer = lazy(() => import('src/sections/assets/document-view'));
+
 export const CandidateProfilePage = lazy(() => import('src/pages/candidateProfile'));
 
 export const ClientCalendarPage = lazy(() => import('src/pages/clientcalendar'));
@@ -28,14 +30,13 @@ export default function Router() {
       ),
       children: [
         { element: <IndexPage />, index: true },
-        {
-          path: 'ats',
-          element: <AtsPage />,
-        },
+        { path: 'ats', element: <AtsPage /> },
         { path: 'ats/candidateprofile', element: <CandidateProfilePage /> },
 
         { path: 'billing', element: <BillingPage /> },
-        { path: 'assets', element: <ClientCalendarPage /> },
+
+        { path: 'assets', element: <AssetsPage /> },
+        { path: 'assets/document-viewer/:fileId', element: <DocumentViewer /> },
       ],
     },
     {

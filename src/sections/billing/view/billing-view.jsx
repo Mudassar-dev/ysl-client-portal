@@ -7,11 +7,13 @@ import Typography from '@mui/material/Typography';
 import { getCleintBillingDetails } from 'src/services/userService';
 
 import Loading from 'src/components/loading';
+import BillingTimeline from 'src/components/timeline-view/billing-timeline';
 
 import './index.css';
 import InfoCard from '../info-card';
 import InviceSection from '../invoice-section';
 import Subscriptions from '../Subscriptions-card';
+
 // import CustomerConfigurations from '../customerConfigurations-card';
 
 // ----------------------------------------------------------------------
@@ -23,7 +25,7 @@ export default function BillingView() {
   const getBillingDetails = async () => {
     setIsLoading(true);
     try {
-      const resData = await getCleintBillingDetails('King Plumbing');
+      const resData = await getCleintBillingDetails('AirCo Air Conditioning, Heating and Plumbing');
       setBillingData(resData?.data);
       setIsLoading(false);
     } catch (error) {
@@ -44,14 +46,18 @@ export default function BillingView() {
           New Post
         </Button> */}
       </Stack>
+
+
       {isLoading ? (
         <Loading />
       ) : (
         <section className="info-reports">
+                <BillingTimeline timelineData={billingData?.invoiceTimeline} />
+
           <InfoCard billingData={billingData} />
           {/* <CustomerConfigurations /> */}
           <Subscriptions billingData={billingData} />
-          <InviceSection />
+          <InviceSection billingData={billingData} />
         </section>
       )}
       {/* <InviceSection /> */}

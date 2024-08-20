@@ -8,6 +8,7 @@ import Iconify from 'src/components/iconify';
 
 import AppTasks from '../app-tasks';
 import AppNewsUpdate from '../app-news-update';
+import HorizontalTimeline from '../app-timeline';
 import AppOrderTimeline from '../app-order-timeline';
 import AppCurrentVisits from '../app-current-visits';
 // import AppWebsiteVisits from '../app-website-visits';
@@ -15,7 +16,6 @@ import AppWidgetSummary from '../app-widget-summary';
 import AppTrafficBySite from '../app-traffic-by-site';
 import AppCurrentSubject from '../app-current-subject';
 import AppConversionRates from '../app-conversion-rates';
-import HorizontalTimeline from '../timelineView/app-timeline';
 import CalendarComponent from '../calanderView/calendar-view';
 
 // ----------------------------------------------------------------------

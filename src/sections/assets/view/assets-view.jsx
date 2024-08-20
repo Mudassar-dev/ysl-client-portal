@@ -19,20 +19,19 @@ export default function AssetsView() {
   const [isLoading, setIsLoading] = useState(true);
   const [files, setFiles] = useState([]);
 
-  const getAssetsData = async () => {
-    setIsLoading(true);
-    try {
-      const assetsData = await getAssetsByName('King Plumbing');
-      const assets = assetsData?.data;
-      if (assets?.files?.length) setFiles(assets?.files);
-
-      setIsLoading(false);
-    } catch (error) {
-      console.error('Failed to fetch:', error);
-    }
-  };
-
   useEffect(() => {
+    const getAssetsData = async () => {
+      setIsLoading(true);
+      try {
+        const assetsData = await getAssetsByName('King Plumbing');
+        const assets = assetsData?.data;
+        if (assets?.files?.length) setFiles(assets?.files);
+
+        setIsLoading(false);
+      } catch (error) {
+        console.error('Failed to fetch:', error);
+      }
+    };
     getAssetsData();
   }, []);
 

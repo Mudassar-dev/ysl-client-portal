@@ -25,7 +25,6 @@ const HorizontalTimeline = () => {
     try {
       const journyData = await getClientJourny('King Plumbing');
       const data = journyData?.data;
-      console.log('data', data);
       setjournyStages(data?.journyFields);
 
       const activeIndex = data.journyFields.findIndex((item) => item.value === data.journyValue);
@@ -57,8 +56,6 @@ const HorizontalTimeline = () => {
     slidesToScroll: 1,
     // centerMode: true,
   };
-
-  console.log('journyValue', journyValue);
 
   return (
     <Box className="timeline-container">

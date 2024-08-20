@@ -11,7 +11,7 @@ import { formatPrice } from 'src/utils/format-number';
 import { formattedDate } from 'src/utils/format-date';
 
 export default function Subscriptions({ billingData }) {
-  const { subscription, customerDetails } = billingData;
+  const { subscription, customerDetails, upcoming_payment } = billingData;
   return (
     <Box sx={{ mt: 5 }}>
       <Typography variant="h5" className="card-title">
@@ -83,11 +83,7 @@ export default function Subscriptions({ billingData }) {
               <Box flex="3">
                 <Typography>
                   {' '}
-                  {formatPrice(
-                    Number(data?.subscriptionItems?.subscription_items_1?.amount || 0) +
-                      Number(data?.subscriptionItems?.subscription_items_2?.amount || 0)
-                  )}{' '}
-                  {data?.currency_code}
+                  {formatPrice(Number(upcoming_payment?.amount_due || 0))} {data?.currency_code}
                 </Typography>
               </Box>
             </Box>

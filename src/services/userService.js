@@ -28,6 +28,16 @@ export const getAssetsByName = async (clientName) => {
     }
 };
 
+export const getAssetsFileById = async (fileId) => {
+    try {
+        const response = await api.get(`/api/googleDriveGetFileById/${fileId}`, { responseType: 'blob' });
+        return response.data;
+    } catch (error) {
+        console.error('Error fetching user data:', error);
+        throw error;
+    }
+};
+
 export const getCleintAtsData = async (clientName) => {
     try {
         const response = await api.get(`/api/getCleintAtsData/${clientName}`);
