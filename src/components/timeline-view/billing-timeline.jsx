@@ -33,6 +33,20 @@ export default function Billing_Timeline({ timelineData }) {
     margin: 20,
     nav: false,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
     // centerMode: true,
   };
 

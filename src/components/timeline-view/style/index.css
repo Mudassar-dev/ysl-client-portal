@@ -168,3 +168,18 @@
 .roadmap_Slider .slick-next {
   right: -35px !important;
 }
+
+@media (max-width:768px){
+  .roadmap_Slider .slick-prev {
+    left: -20px !important;
+  }
+  
+  .roadmap_Slider .slick-next {
+    right: -20px !important;
+  }
+}
+.table-container {
+  overflow-x: auto;
+  padding: 16px;
+  white-space: nowrap; /* Ensures that the text doesn't wrap, making horizontal scroll more effective */
+}

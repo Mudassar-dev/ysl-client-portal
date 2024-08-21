@@ -84,3 +84,37 @@
 .mt-3 {
   margin-top: 0.3rem;
 }
+
+
+.css-1q2vl3v-MuiButtonBase-root-MuiAccordionSummary-root{
+  padding: 0;
+}
+
+.MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-3.css-1equabv-MuiGrid-root{
+padding-top: 0;
+font-size: 14px;
+}
+
+.css-46bh2p-MuiCardContent-root{
+padding: 0 10px 0 0;
+}
+@media (max-width:768px){
+  .according-listing .according-heading {
+    padding: 0;
+    white-space: nowrap;
+  }
+  .according-listing .according-heading {
+    padding: 15px 10px !important;
+}
+.info-reports .card-box.table-wraper{
+  overflow: hidden;
+}
+
+.table-wraper .MuiBox-root.css-0{
+  overflow: auto;
+}
+.table-wraper .according-listing{
+  width: 700px;
+  overflow: auto;
+}
+}

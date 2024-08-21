@@ -23,7 +23,7 @@ import { formattedDate } from 'src/utils/format-date';
 
 function InvoiceAccordion({ invoiceData }) {
   return (
-    <Card className="card-box" sx={{ mt: 5, mb: 5 }}>
+    <Card className="card-box table-wraper" sx={{ mt: 5, mb: 5 }}>
       <CardContent>
         <Box>
           <div className="according-listing">
@@ -113,7 +113,7 @@ function InvoiceAccordion({ invoiceData }) {
                           {invoice?.site_details_at_creation?.timezone}
                         </Typography>
 
-                        <TableContainer component={Paper} className="table">
+                        <TableContainer component={Paper} className="table table-container ">
                           <Table>
                             <TableHead>
                               <TableRow>
@@ -162,7 +162,7 @@ function InvoiceAccordion({ invoiceData }) {
                             Amount Paid
                           </Grid>
                           <Grid item xs={3}>
-                            <Typography variant="h5" sx={{ pl: 4 }}>
+                            <Typography variant="h5" sx={{ pl: 4, mt:2 }}>
                               {formatPrice(invoice?.amount_paid)}
                             </Typography>
                           </Grid>
@@ -185,3 +185,4 @@ export default InvoiceAccordion;
 InvoiceAccordion.propTypes = {
   invoiceData: PropTypes.array.isRequired,
 };
+
